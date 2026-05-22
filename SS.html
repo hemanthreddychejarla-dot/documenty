@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Sirihitha 🌸</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 80px 50px;
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 700px;
+            animation: appear 1s ease-in;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            background: linear-gradient(135deg, #ff1493, #ff69b4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            color: #764ba2;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.25em;
+            color: #333;
+            margin: 20px 0;
+            line-height: 1.8;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .love {
+            font-size: 3em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff1493, #ff69b4, #ff1493);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 50px 0;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .date-btn {
+            background: linear-gradient(135deg, #ff1493, #ff69b4);
+            color: white;
+            border: none;
+            padding: 20px 50px;
+            font-size: 1.3em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+            letter-spacing: 1px;
+        }
+
+        .date-btn:hover {
+            transform: scale(1.15) translateY(-3px);
+            box-shadow: 0 20px 50px rgba(255, 20, 147, 0.7);
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+        }
+
+        .date-btn:active {
+            transform: scale(0.95);
+        }
+
+        .heart {
+            position: fixed;
+            pointer-events: none;
+            animation: float 6s ease-in forwards;
+        }
+
+        @keyframes float {
+            0% {
+                opacity: 1;
+                transform: translateY(0) rotateZ(0deg);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) rotateZ(360deg);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes glow {
+            from {
+                filter: drop-shadow(0 0 10px rgba(255, 20, 147, 0.6));
+            }
+            to {
+                filter: drop-shadow(0 0 20px rgba(255, 20, 147, 1));
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .stars {
+            position: fixed;
+            width: 2px;
+            height: 2px;
+            background: white;
+            border-radius: 50%;
+            animation: twinkle 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>✨ For My Sirihitha ✨</h1>
+    <p class="subtitle">"You are my favorite reason to smile"</p>
+
+    <p>Every time I see your smile,</p>
+    <p>my heart forgets how to stay calm 💖</p>
+    
+    <p>You walked into my life like a beautiful dream ✨</p>
+    <p>And somehow made every ordinary moment feel magical 🌹</p>
+    
+    <p>I don't know what the future looks like...</p>
+    <p>But I know I want you in every part of it ❤️</p>
+    
+    <p>Your voice is my favorite sound 🎶</p>
+    <p>Your happiness is my favorite feeling 🥹</p>
+    <p>And your name is my favorite notification 🌸</p>
+
+    <div class="love">💖 I LOVE YOU SIRIHITHA 💖</div>
+
+    <p style="margin-top: 40px; font-size: 1.4rem; color: #ff1493; font-weight: bold;">
+        Will you make me the happiest person alive?
+    </p>
+
+    <button class="date-btn" onclick="showMessage()">
+        Let's Make Magic Together 🌹✨
+    </button>
+</div>
+
+<script>
+    function showMessage() {
+        const messages = [
+            'YAYYY 💖✨\nYou just made me the happiest person ever, Sirihitha! 🌸',
+            'I LOVE YOU SO MUCH! 💕\nThis is the best day of my life! 🎉',
+            'You\'re my forever person! 👑💖\nLet\'s create beautiful memories together! 🌹'
+        ];
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        alert(randomMessage);
+    }
+
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '❤️';
+
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+        heart.style.fontSize = (Math.random() * 25 + 20) + 'px';
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+
+    // Create hearts more frequently
+    setInterval(createHeart, 400);
+
+    // Add some sparkle to the page
+    document.addEventListener('mousemove', (e) => {
+        if (Math.random() > 0.95) {
+            const sparkle = document.createElement('div');
+            sparkle.innerHTML = '✨';
+            sparkle.style.position = 'fixed';
+            sparkle.style.left = e.clientX + 'px';
+            sparkle.style.top = e.clientY + 'px';
+            sparkle.style.pointerEvents = 'none';
+            sparkle.style.fontSize = '20px';
+            sparkle.style.animation = 'float 1s ease-out forwards';
+            document.body.appendChild(sparkle);
+            setTimeout(() => sparkle.remove(), 1000);
+        }
+    });
+</script>
+
+</body>
+</html>
